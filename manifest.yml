@@ -1,8 +1,10 @@
 ---
 applications:
 - name: zouhuitest
+  memory: 512M
   path: target/Chatbot-0.0.1.war
   buildpack: liberty-for-java
+  disk_quota: 512M
   env:
     CONVERSATION_WORKSPACE_ID: 6a318758-369c-411d-9007-1e6f6b1d8555
     CAR_SERVICE_HOST: https://github.com/zouhui82/IOTCar
